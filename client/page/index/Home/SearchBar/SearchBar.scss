@@ -1,0 +1,71 @@
+.search-bar {
+  width: 100%;
+  height: px2rem(40px);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: px2rem(8px);
+
+  .bar-location {
+    display: flex;
+    align-items: center;
+    margin-right: px2rem(20px);
+    border-radius: px2rem(13px);
+    background-color: rgba(0, 0, 0, 0.33);
+    height: px2rem(28px);
+    width: px2rem(92px);
+  }
+
+  .location-icon {
+    width: px2rem(16px);
+    height: px2rem(16px);
+    margin-left: px2rem(6px);
+    background-image: url('./img/locationIcon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .location-text {
+    font-size: px2rem(14px);
+    color: #fff;
+    margin-left: px2rem(4px);
+    margin-right: px2rem(4px);
+  }
+
+  .arrow-right-icon {
+    width: px2rem(14px);
+    height: px2rem(14px);
+    background-image: url('./img/arrowIcon.png');
+    background-size: cover;
+  }
+
+  .search-btn {
+    position: relative;
+    width: px2rem(170px);
+    height: px2rem(30px);
+    background-color: #fff;
+    border-radius: px2rem(20px);
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: px2rem(14px);
+      height: px2rem(14px);
+      background-image: url('./img/searchIcon.png');
+      background-size: cover;
+      top: px2rem(7px);
+      left: px2rem(10px);
+    }
+  }
+
+  .place-holder {
+    color: #a9a9a9;
+    font-size: px2rem(14px);
+    height: 100%;
+    line-height: px2rem(30px);
+    margin-left: px2rem(28px);
+  }
+
+}
