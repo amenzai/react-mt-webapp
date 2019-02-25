@@ -10,7 +10,7 @@ export const getHeaderData = () => async (dispatch) => {
   // });
   let resp = await axios({
     method: 'post',
-    url: 'http://localhost:3000/api',
+    url: 'http://127.0.0.1:8002/api',
     data: {
       url: 'http://i.waimai.meituan.com/ajax/v7/home/head',
       params: {
