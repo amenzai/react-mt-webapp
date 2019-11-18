@@ -252,6 +252,10 @@ class Header extends React.Component {
     )
   }
 
+  stopProp = (e) => {
+    e.stopPropagation();
+  }
+
   render() {
     let cls = 'panel'
     if (!this.props.closePanel) {
@@ -264,7 +268,7 @@ class Header extends React.Component {
       <div className="header">
         <div className="header-top">{this.renderTabs()}</div>
         <div className={cls} onClick={this.closePanel}>
-          <div className="panel-inner">{this.renderContent()}</div>
+          <div className="panel-inner" onClick={this.stopProp}>{this.renderContent()}</div>
         </div>
       </div>
     )
